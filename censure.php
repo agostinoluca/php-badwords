@@ -13,7 +13,9 @@
     <div class="container-sm">
         <?php
         $paragraph = $_POST['paragraph'];
-        var_dump($paragraph);
+        // var_dump($paragraph);
+        $word = $_POST['word'];
+        var_dump($word);
         ?>
     </div>
 </body>
