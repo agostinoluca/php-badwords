@@ -15,8 +15,12 @@
         $paragraph = $_POST['paragraph'];
         // var_dump($paragraph);
         $word = $_POST['word'];
-        var_dump($word);
+        // var_dump($word);
         ?>
+        <h2>Your inserted paragraph:</h2>
+        <?= $paragraph ?>
+        <h6 class="mt-2">Length of your paragraph</h6>
+        <?= strlen($paragraph) ?>
     </div>
 </body>
 
