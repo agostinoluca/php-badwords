@@ -10,19 +10,27 @@
 </head>
 
 <body>
-    <div class="container-sm">
+    <div class="container-sm m-auto">
         <?php
         $paragraph = $_POST['paragraph'];
         // var_dump($paragraph);
         $word = $_POST['word'];
         // var_dump($word);
         $censoredParagraph = str_ireplace($word, '***', $paragraph);
-        var_dump($censoredParagraph);
+        // var_dump($censoredParagraph);
         ?>
-        <h2>Your inserted paragraph:</h2>
-        <?= $paragraph ?>
-        <h6 class="mt-2">Length of your paragraph</h6>
-        <?= strlen($paragraph) ?>
+        <div class="text-center m-5">
+            <h2 class="text-success">Your inserted paragraph:</h2>
+            <?= $paragraph ?>
+            <h6 class="mt-2">Length of your paragraph</h6>
+            <?= strlen($paragraph) ?>
+        </div>
+        <div class="text-center">
+            <h2 class="text-danger">Your censored paragraph:</h2>
+            <?= $censoredParagraph ?>
+            <h6 class="mt-2">Length of censored paragraph</h6>
+            <?= strlen($censoredParagraph) ?>
+        </div>
     </div>
 </body>
 
