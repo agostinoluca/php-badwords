@@ -21,9 +21,9 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 
 <body>
     <div class="container-sm m-auto p-4 ">
-        <form action="" method="post" class="d-flex flex-column align-items-center gap-2">
+        <form action="censure.php" method="post" class="d-flex flex-column align-items-center gap-2">
             <textarea placeholder="Enter your paragraph here" name="paragraph" id="paragraph" cols="50" rows="3"></textarea>
-            <input type="text" name="censure" id="censure" class="w-50">
+            <input placeholder="Enter the word you want to censor here" type="text" name="word" id="word" class="w-50">
             <input type="submit" value="Send">
         </form>
     </div>
