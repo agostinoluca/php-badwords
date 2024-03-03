@@ -12,7 +12,8 @@
 <body>
     <div class="container-sm">
         <?php
-        // recuperare il dato post di index.php
+        $paragraph = $_POST['paragraph'];
+        var_dump($paragraph);
         ?>
     </div>
 </body>
