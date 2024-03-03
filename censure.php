@@ -16,6 +16,8 @@
         // var_dump($paragraph);
         $word = $_POST['word'];
         // var_dump($word);
+        $censoredParagraph = str_ireplace($word, '***', $paragraph);
+        var_dump($censoredParagraph);
         ?>
         <h2>Your inserted paragraph:</h2>
         <?= $paragraph ?>
